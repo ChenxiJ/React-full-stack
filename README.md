@@ -29,7 +29,6 @@ Go to *client*, run the followinng command in terminal:
 yarn start
 ```
 
-Open localhost:3000 to view the website. Drag and drop to change the grid, click the update button to update the database. The updated
-grid will be loaded on fresh.
+Open localhost:3000 to view the website. Drag and drop to change the grid, click the update button to update the database. The updated grid will be loaded when freshing the page.
 
 
