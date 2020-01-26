@@ -3,7 +3,7 @@ CREATE TABLE bank (
     type VARCHAR(1000) NOT NULL,
     title VARCHAR(1000) NOT NULL,
     position INTEGER NOT NULL,
-    img VARCHAR(1000) NOT NULL,
+    img VARCHAR(1000) NOT NULL
 );
 
 INSERT INTO bank (type, title, position, img) VALUES 

@@ -22,7 +22,7 @@ services:
         ports:
             - "8888:8888"
         volumes: 
-            - ./pg-api:/app
+            - ./api:/app
         depends_on:
             - db
 
