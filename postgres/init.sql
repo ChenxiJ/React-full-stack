@@ -1,3 +1,6 @@
+CREATE SCHEMA records;
+SET search_path TO records;
+
 CREATE TABLE bank (
     id SERIAL PRIMARY KEY,
     type VARCHAR(1000) NOT NULL,
