@@ -5,7 +5,7 @@ let { Pool } = require("pg");
 const PORT = 8888;
 
 let pool = new Pool({
-    host : 'localhost',
+    host : 'db',
     database : 'catbank',
     user : 'postgres',
     password : 'postgres',
@@ -28,11 +28,9 @@ app.use(function(req, res, next) {
     next();
 });
 
-// app.get('/', function(req,res) {
-// res.send("Hello From Docker");
-// });
 
-app.get('/banks', function(request, response) {
+app.get('/', function(request, response) {
+    console.log("we are trying")
     pool.connect((err, client, release) => {
         if(err) {
             return response.status(400).send(err.stack);

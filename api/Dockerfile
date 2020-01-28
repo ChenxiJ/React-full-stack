@@ -1,7 +1,7 @@
 FROM node:13.6
-WORKDIR /app
-ENV PATH /app/node_modules/.bin:$PATH
-COPY . ./
+WORKDIR /usr/src/app
+COPY package*.json ./
+RUN npm install
+COPY . .
 EXPOSE 8888
-RUN yarn
-CMD ["node", "server.js"]
+CMD [ "node", "server.js" ]

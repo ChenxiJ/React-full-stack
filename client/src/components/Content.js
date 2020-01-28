@@ -8,7 +8,7 @@ function Content(props) {
 
     useEffect(() => {
         console.log("Component mounted successfully!")
-        var request = new Request('http://localhost:' + props.port + '/banks', {
+        var request = new Request('http://localhost:' + props.port + '/', {
             method: 'GET',
             mode: 'cors',
             cache: 'no-cache'
